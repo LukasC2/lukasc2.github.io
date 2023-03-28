@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pocket Cashier</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Pocket Cashier</h1>
+	<form>
+		<label for="amountOwed">Amount Owed (€):</label>
+		<input type="number" id="amountOwed" name="amountOwed" min="0" step="0.01" required><br><br>
+		<label for="amountGiven">Amount Given (€):</label>
+		<input type="number" id="amountGiven" name="amountGiven" min="0" step="0.01" required><br><br>
+		<button type="button" onclick="calculateChange()">Calculate Change</button>
+	</form>
+	<div class="change-container">
+		<h2>Change Due:</h2>
+		<p id="changeDue"></p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
